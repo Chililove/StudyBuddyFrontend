@@ -1,0 +1,120 @@
+.typewriter h1 {
+
+  text-align: center;
+  align-content: center;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .10em solid grey; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 40px auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 2s steps(40, end),
+    blink-caret .75s step-end infinite;
+
+}
+.boxed {
+  border: 1px solid green ;
+  margin-top: 150px;
+
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60% }
+
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: lightgray;}
+}
+#profilepic{
+  position: absolute;
+  max-width: 14%;
+  height: auto;
+  margin-left: 85px;
+  margin-top: 120px;
+  border-radius: 100px 100px 100px 100px; /*TL TR BR BL*/
+
+}
+
+
+#userinfo{
+  position: center;
+  margin-top: 300px;
+
+
+}
+#username{
+  text-align: center;
+  position: absolute;
+  margin-left: 80px;
+  margin-right: 70px;
+  pointer-events: none;
+  border-radius: 50px 50px 50px 50px;
+  border-style: double;
+
+
+
+}
+#email{
+  text-align: center;
+  position: absolute;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 20px;
+  pointer-events: none;
+  border-radius: 50px 50px 50px 50px;
+  border-style: double;
+
+}
+
+.example_a {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: lightblue;
+  background-blend-mode: color;
+  font-size: 16px;
+  padding: 20px;
+
+
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  border-radius: 50px 50px 50px 50px;
+
+}
+.example_a:hover {
+  background: #434343;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px 1px rgba(0,0,0,0.57);
+}
+
+.example_a:hover {
+  transition: all 0.4s ease 0s;
+}
+
+#btncourses{
+  position: absolute;
+  margin-right: 350px;
+  margin-top: 60px;
+
+
+
+
+}
+#btnsaved{
+
+  margin-left: 200px;
+  margin-top: 60px;
+
+}
+
+
+

@@ -1,0 +1,49 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+  <a class="navbar-brand" id="logo" routerLink="/welcome" routerLinkActive="active">StudyBuddy</a>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarCoursesMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Courses
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" id="down">
+          <li><a class="dropdown-item" routerLinkActive="active" routerLink="/course-list">All Courses</a></li>
+          <li><a class="dropdown-item" routerLinkActive="active" routerLink="/course-create">Create Course</a></li>
+          <li><a class="dropdown-item" routerLinkActive="active" routerLink="/course-update">Edit Course</a></li>
+          <li><a class="dropdown-item" routerLinkActive="active" routerLink="/course-detail">Delete Course</a></li>
+        </ul>
+      </li>
+  <!--  </ul>
+  </div> -->
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarTopicsMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Topics
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" id="tdown">
+          <li><a class="dropdown-item"  routerLinkActive="active" routerLink="/topic-list">All Topics</a></li>
+          <li><a class="dropdown-item"  routerLinkActive="active" routerLink="/topic-create">Create Topics</a></li>
+          <li><a class="dropdown-item" routerLinkActive="active" routerLink="/topic-update">Edit Topics</a></li>
+          <li><a class="dropdown-item" routerLinkActive="active" routerLink="/topic-detail">Delete Topics</a></li>
+        </ul>
+      </li>
+
+
+  <ul class="navbar-nav">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Username
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" id="box">
+        <li><a class="dropdown-item-text" id="txt1" [text]="">Hi Admin!</a></li>
+        <li><a class="dropdown-item-text" id="txt2" [text]="">admin@admin.dk</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" routerLink="/welcome">Logout</a></li>
+      </ul>
+    </li>
+
+      </ul>
+</ul>
+</nav>

@@ -1,0 +1,171 @@
+
+  <div class="scrollbar square scrollbar-lady-lips thin">
+    <div class="force-overflow">
+
+
+                            <!-- slideshow -->
+
+  <div id="main" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/assets/coffee.jpg" class="img-fluid w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/epic1.jpg" class="img-fluid w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/hi.jpeg" class="img-fluid w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/rule.jpeg" class="img-fluid w-100" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#main" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#main" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+                           <!-- Show All Admins-->
+
+    <div class="container" style="padding: 0px">
+      <h3 id="hiAdmin" style="padding: 20px">Hello Admin! Here are your fellow friends: </h3>
+
+      <ul id="readlistbox">
+        <ul id="listadmin">
+        <li *ngFor="let admin of Admins"><a>Username: <br>   </a> {{admin.name}}<br><a>Email: <br> </a>{{admin.email}}
+
+        </li>
+        </ul>
+      </ul>
+
+    </div>
+
+                                   <!-- Admin Create -->
+<div class="container-lg" style="background: #212529;" >
+
+  <form class="row gx-3 gy-2 align-items-center" id = "formRead" action="#">
+    <div class="form-group" style="background:#212529">
+      <legend aria-describedby="emailHelp">
+        <small id="Header2" class="form-text">Hey! Did you know that you can create a new profile here:</small>
+      </legend>
+      <div>
+        <label for="name1" style="color: #d9d9d9">Username:</label><br>
+        <input type="text" class="form-control" id="name1" name="name" value=""><br>
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon2">@</span>
+        <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+      </div>
+
+      <select class="form-select" id="selectType" aria-label="Default select example">
+        <option selected routerLinkActive="active">Choose a usertype...</option>
+        <option value="1">Admin</option>
+        <option value="2">Teacher</option>
+        <option value="3">User</option>
+      </select>
+
+      <div  style="margin-left: 330px">
+      <input class="btn btn-outline-info" id="inputSubmit" type="submit" value="Create">
+      </div>
+                                    <!-- json data validation -->
+      <p style="color: #d9d9d9" >
+        Form Value: {{ filterForm.value | json }}
+      </p>
+
+
+      <p style="color: #d9d9d9">
+        Form Status: {{ filterForm.status }}
+      </p>
+
+    </div>
+  </form>
+</div>
+
+                                 <!--- Admin Update -->
+
+    <div class="container-lg" style="background: #212529;" >
+
+      <form class="row gx-3 gy-2 align-items-center" id = "formUpdate" action="#">
+        <div class="form-group" style="background:#212529">
+          <legend aria-describedby="emailHelp">
+            <small id="HeaderEdit" class="form-text"> Edit your profile bellow:</small>
+          </legend>
+
+
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select profile to edit</option>
+            <option value="1">Nadia</option>
+            <option value="2">Martin</option>
+            <option value="3">Chili</option>
+          </select>
+
+          <div>
+            <label for="name2" style="color: #d9d9d9">Edit Username:</label><br>
+            <input type="text" class="form-control" id="name2" name="name" value=""><br>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon3">@</span>
+            <input type="text" class="form-control" placeholder="New Email" aria-label="New Email" aria-describedby="basic-addon1">
+          </div>
+
+          <div  style="margin-left: 330px">
+            <input class="btn btn-outline-info" id="submitEdit" type="submit" value=" Save">
+          </div>
+          <!-- json data validation -->
+          <p style="color: #d9d9d9" >
+            Form Value: {{ filterForm.value | json }}
+          </p>
+
+
+          <p style="color: #d9d9d9">
+            Form Status: {{ filterForm.status }}
+          </p>
+
+        </div>
+      </form>
+    </div>
+
+
+
+                                  <!-- Admin Delete -->
+    <div class="container-lg" style="background: #212529;" >
+
+      <form class="row gx-3 gy-2 align-items-center" id = "formDelete" action="#">
+        <div class="form-group" style="background:#212529" id="formBox">
+          <legend aria-describedby="emailHelp">
+            <small  class="form-text" id="Headerdelete">Do you wish to delete an user?<br> Do so here:</small>
+          </legend>
+
+          <input class="btn" id="inputDelete" type="submit" value="">
+
+          <select class="form-select" id="selectDelete" aria-label="Default select example">
+            <option selected routerLinkActive="active">Choose to delete...</option>
+            <option value="1">Nadia</option>
+            <option value="2">Martin</option>
+            <option value="3">Chili</option>
+          </select>
+
+
+
+          <!-- json data validation -->
+          <p style="color: #d9d9d9;margin-left: 20px;" >
+            Form Value: {{ filterForm.value | json }}
+          </p>
+
+
+          <p style="color: #d9d9d9; margin-left: 20px;">
+            Form Status: {{ filterForm.status }}
+          </p>
+
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+
+
+

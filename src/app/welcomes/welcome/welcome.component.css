@@ -1,0 +1,119 @@
+.typewriter h1 {
+  text-align: center;
+  align-content: center;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .10em solid grey; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 40px auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 2s steps(20, end),
+    blink-caret .75s step-end infinite;
+}
+.boxed {
+  border: 1px solid green ;
+  margin-top: 150px;
+
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60% }
+
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: lightgray;}
+}
+
+#carousel{
+  position: fixed;
+  top: 590px;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  opacity: .6;
+  filter: alpha(opacity=80);
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+  border-radius: 100px 40px 100px 1px; /*TL TR BR BL*/
+  overflow: hidden;
+}
+#arrow{
+  position: fixed;
+  max-width:15%;
+  height: auto;
+  margin-left: 1180px;
+  margin-bottom: 400px;
+  -webkit-transform:rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+#pointup{
+  position: fixed;
+  max-width: 32%;
+  height: auto;
+  margin-left: 850px;
+  margin-top: 300px;
+}
+#text-box{
+  border-style: hidden;
+  align-content: center;
+  font-family: "Apple SD Gothic Neo";color: #434343;
+  margin-top: 90px;
+  margin-right: 420px;
+  margin-left: 440px;
+  line-height: 25px;
+  font-size: 19px;
+}
+
+
+.carouselExampleSlidesOnly{
+
+
+}
+
+blockquote {
+  position: fixed;
+  font-style:italic;
+  line-height:26px;
+  font-size:16px;
+  text-align: center;
+  color:#fff;
+  background: grey;
+  opacity: 80%;
+  margin-left: 425px;
+  margin-right: 15px;
+  margin-top: 520px;
+  padding: 8px 10px 6px 6px;
+  border-radius: 30px 30px 40px 40px; /*TL TR BR BL*/
+
+}
+blockquote:before,
+blockquote:after {
+  position: relative;
+  vertical-align: middle;
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 0;
+  color: aqua;
+}
+blockquote:before {
+  left: -5px;
+  content: '\201C';
+}
+blockquote:after {
+  content: '\201D';
+}
+
+

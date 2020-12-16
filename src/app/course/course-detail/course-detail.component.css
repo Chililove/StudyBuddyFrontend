@@ -1,0 +1,33 @@
+#body{
+  margin-top: 30px;
+  background: #212529;
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: 1px;
+  color: #d9d9d9;
+
+}
+
+#tatters {
+  padding: 10px;
+}
+#waffles {
+  text-align: center;
+}
+#pancakes {
+  margin:0 auto;
+  display:block;
+}
+#eggs {
+  margin-top: 20px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  overflow: auto;
+}
+
+#bacon {
+
+  padding: 5px;
+
+}

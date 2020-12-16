@@ -1,0 +1,80 @@
+<div class="container-fluid px-0 justify-content-center">
+
+
+  <div class="typewriter" style="width: 100vw; font-size: 20px; background-image: linear-gradient(to left, violet, purple, lightskyblue, deeppink, lightpink, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  position: absolute;
+  right: 10px;
+
+">
+    <h1>Hello {{userType}}!</h1>
+
+  </div>
+
+  <img src="../../../assets/img/maskguy.gif" id="profilepicT" alt="animeboyprof">
+
+  <div class="center" id="userinfo">
+
+  </div>
+  <div class="inputAnimate">
+    <label for="usernameT"></label><input type="text" id="usernameT" placeholder="{{userType}}">
+
+  </div>
+  <div class="inputAnimate">
+    <label for="emailT"></label><input type="text" id="emailT" placeholder="{{email}}">
+  </div>
+  <div id="boxsaved">
+    <div class="button_cont"><a class="example_b" id="btncoursesAll" routerLink="/course-list" style="background-image: linear-gradient(to left, violet, purple, lightskyblue, deeppink, lightpink, red);
+-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-color: grey;
+  border-style: dashed;" target="_blank" rel="nofollow noopener">All Courses</a></div>
+    <div class="button_cont"><a class="example_b" id="btnComment" routerLink="/comment-list" style="background-image: linear-gradient(to left, violet, purple, lightskyblue, deeppink, lightpink, red); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-color: grey;
+  border-style: dashed" target="_blank" >Comments for you</a></div>
+<!--
+    <div class="list-group" id="commentList">
+      <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Header should be header</h5>
+          <small>3 days ago</small>
+        </div>
+        <p class="mb-1">Here could be a comment, na na naaa. get from the database and so on and so on</p>
+        <small>about this comment</small>
+      </a>
+      <a href="" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">help i'm a fish</h5>
+          <small class="text-muted">30 days ago</small>
+        </div>
+        <p class="mb-1">little yellow fish seeking help to understand the meaning of life.</p>
+        <small class="text-muted">see this comment</small>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">these are examples</h5>
+          <small class="text-muted">1 days ago</small>
+        </div>
+        <p class="mb-1">I didn't connect any of this to anything.. I didn't get how to do it</p>
+        <small class="text-muted">Go to comment.</small>
+      </a>
+    </div> -->
+            <div class="card" id="mycourse" style="width: 18rem;">
+            <img src="../../../assets/img/process.jpg" class="card-img-top" routerLink="/topic-page" alt="mycourse">
+            <div class="card-body">
+              <p class="card-text" style="font-family: 'Calibri Light'; font-size: 25px; text-align: center; ">Software Development Planning (SDP)</p>
+            </div>
+          </div>
+          </div>
+    </div>
+    <!--<div style="background: pink;">
+      <p>commment</p>
+      <div *ngIf="comment$ | async as comments">
+        <li *ngFor="let comment of comments">
+          id: {{comment.id}} name: {{comment.name}}
+        </li>
+      </div>
+    </div> -->

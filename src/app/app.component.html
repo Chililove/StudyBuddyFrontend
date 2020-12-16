@@ -1,0 +1,33 @@
+<head>
+  <title>Responsivness cmon</title>
+ <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ <meta name="HandheldFriendly" content="true">
+</head>
+
+<body class="container-fluid" id="body">
+
+
+<div id="navbar">
+
+                               <!--nav -->
+  <!--*ngIfUser> -->
+
+
+  <!-- <app-navbar-user></app-navbar-user>  -->
+   <!--  ngIfTeacher> -->
+    <!-- <app-navbar-teacher></app-navbar-teacher> -->
+  <!-- ngIfNone -->
+        <app-navbar-welcome></app-navbar-welcome>
+
+  <!-- ngIfAdmin -->
+   <!-- <app-navbar-admin></app-navbar-admin>-->
+
+</div>
+
+<div class="container-fluid" style="padding:0;">
+  <router-outlet></router-outlet>
+</div>
+
+  </body>
+

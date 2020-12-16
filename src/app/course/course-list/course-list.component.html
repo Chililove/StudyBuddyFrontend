@@ -1,0 +1,15 @@
+<div class="container-fluid" id="eggs" >
+  <div class="row" >
+    <div class="col-lg-4 mx-auto bg-light border-dark lg-4" *ngFor="let course of courses" id="bacon">
+      <div class="card" id="tatters">
+        <img src="assets/img/codestuff.jpg" class="card-img-top" alt="...">
+        <mdb-card-body>
+          <mdb-card-title>
+            <h4 class="card-title" id="waffles">{{course.name}}</h4>
+          </mdb-card-title>
+          <a routerLinkActive="active" routerLink="/topic-list/{{course.id}}" class="btn btn-primary" id="pancakes">Go to Course</a>
+        </mdb-card-body>
+      </div>
+    </div>
+  </div>
+</div>

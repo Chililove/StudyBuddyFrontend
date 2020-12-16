@@ -1,0 +1,127 @@
+#boxform{
+  margin-top: 10px;
+  margin-right: 590px;
+  width: 540px;
+
+}
+
+#formBox{
+  margin-top: 10px;
+  margin-left: 470px;
+  width: 540px;
+}
+#submitEdit{
+  position: revert;
+  padding-right: 20px;
+
+}
+
+#inputSubmit{
+  margin-top:20px;
+}
+
+#input{
+  margin-right: 500px;
+  margin-left: 170px;
+}
+
+#main{
+
+height: 340px;
+
+}
+
+#readlistbox{
+  background: #212529;
+  margin-right: 1px;
+  margin-left: 1px;
+}
+#formRead{
+  background: #212529;
+  margin-bottom: 20px;
+  margin-left: 700px;
+  display-inside: ruby-base-container;
+}
+
+#formUpdate{
+  margin-bottom: 20px;
+  margin-right:700px;
+  display-inside: ruby-text-container;
+
+}
+
+#formDelete{
+  margin-bottom: 20px;
+  margin-right: 620px;
+  display-inside: ruby-text-container;
+}
+
+#listadmin{
+  color: #d9d9d9;
+  list-style: none;
+ 
+ font-size: 25px;
+ --bs-font-sans-serif-font-family: "Apple SD Gothic Neo";
+
+}
+
+#Header2{
+  font-size: 34px;
+  color: #d9d9d9;
+  --bs-font-sans-serif-font-family: system-ui, "Apple SD Gothic Neo", bold;
+}
+
+#HeaderEdit{
+  font-size: 34px;
+  color: #d9d9d9;
+  --bs-font-sans-serif-font-family: system-ui, "Apple SD Gothic Neo", bold;
+}
+
+
+#selectDelete{
+
+  margin-left: 20px;
+
+}
+
+#Headerdelete{
+  position: -ms-device-fixed;
+  padding-top: 10px;
+  padding-bottom: 200px;
+  font-size: 30px;
+  color: #d9d9d9;
+  --bs-font-sans-serif-font-family: system-ui, "Apple SD Gothic Neo", bold;
+
+}
+
+#inputDelete{
+  position: absolute;
+  margin-left: 40px;
+  padding-right: 41px;
+  margin-bottom: 200px;
+  margin-top: 98px;
+  background-image: url("src/assets/Deleteicon.png");
+
+}
+
+#hiAdmin{
+    font-size: 40px;
+    margin-left: 10px;
+    color: black;
+  --bs-font-sans-serif-font-family: system-ui, "Apple SD Gothic Neo", bold;
+}
+
+
+
+#fixed-content {
+  top: 0;
+  bottom:0;
+  position:fixed;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+
+
+#container{
+  background:#5ee7df;color:#b490ca;
+}

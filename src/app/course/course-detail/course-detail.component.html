@@ -1,0 +1,32 @@
+
+
+<div class="container-fluid" id="body">
+
+<h1 style="margin-left: 450px; padding:20px;">Delete a Course: </h1>
+<button style="color: #b490ca;margin-left:590px;background: #5ee7df; "(click)="delete()">Delete</button>
+<p *ngIf="err" style="color: darkred">{{err.error}}</p>
+</div>
+
+
+    <div class="container-fluid" id="eggs" >
+      <div class="row" >
+        <div class="col-lg-4 mx-auto bg-light border-dark lg-4" *ngFor="let course of courses" id="bacon">
+          <div class="card" id="tatters">
+            <img src="assets/img/codestuff.jpg" class="card-img-top" alt="...">
+            <mdb-card-body>
+              <mdb-card-title>
+                <h4 class="card-title" id="waffles">{{course.name}}</h4>
+              </mdb-card-title>
+              <a routerLink="topic-list/{{course.id}}" class="btn btn-primary" id="pancakes">Go to Course</a>
+            </mdb-card-body>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+

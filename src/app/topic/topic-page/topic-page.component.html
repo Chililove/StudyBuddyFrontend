@@ -1,0 +1,51 @@
+
+<div class="container-fluid justify-content-center" id="body">
+
+
+<img src="/assets/blue.jpg" alt="coffeee" id="imgid">
+
+
+  <h3 id="header">
+    Name Of Chosen Topic for Current User
+  </h3>
+
+  <div id="maininfo">
+  <p id="descript"> Topic description:</p>
+  <div id="topicMain">
+
+     <div>
+       <div>
+         <h5 id="NameH">Name:</h5>
+         {{topic.name}}
+       </div>
+       <div>
+         <h5 id="DesH">Description: </h5>
+         {{topic.mainBody}}
+       </div>
+
+       <h5 id="comH1">Comments:</h5>
+       <div id="box">
+
+         <li *ngFor = "let c of topic.comments">
+
+           <div style="margin-left: 10px">
+               Username: {{c.user}} - DatePosted: {{c.datePosted}}
+           </div>
+           <div style="margin-left: 20px">{{c.mainBody}}</div>
+         </li>
+          </div>
+
+       <div>New Comment:</div>
+         <div class="form-floating">
+           <form [formGroup]="commentForm" type="text" (ngSubmit)="saveComment()">
+           <!-- <textarea class="form-control" placeholder="Leave a comment here" id="commentInput" style="height: 70px"></textarea> -->
+           <input type="text" formControlName="mainBody" style="height: 70px" style="width: 250px">
+             <button type="submit">Save</button>
+           </form>
+         </div>
+     </div>
+  </div>
+ </div>
+</div>
+
+
